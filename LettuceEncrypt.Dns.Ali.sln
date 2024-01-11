@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LettuceEncrypt.Dns.Ali", "src\LettuceEncrypt.Dns.Ali\LettuceEncrypt.Dns.Ali.csproj", "{1A6812C2-4C2B-4AA5-BDB2-5A08BEA0897C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LettuceEncrypt.Dns.AliTests", "test\LettuceEncrypt.Dns.AliTests\LettuceEncrypt.Dns.AliTests.csproj", "{4935D7D8-3E96-4AE9-AA63-85F3C6690DD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LettuceEncrypt.Dns.Ali.Web", "samples\LettuceEncrypt.Dns.Ali.Web\LettuceEncrypt.Dns.Ali.Web.csproj", "{4A26BBF4-6941-44D9-B097-870BD568D59A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A6812C2-4C2B-4AA5-BDB2-5A08BEA0897C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6812C2-4C2B-4AA5-BDB2-5A08BEA0897C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6812C2-4C2B-4AA5-BDB2-5A08BEA0897C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6812C2-4C2B-4AA5-BDB2-5A08BEA0897C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4935D7D8-3E96-4AE9-AA63-85F3C6690DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4935D7D8-3E96-4AE9-AA63-85F3C6690DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4935D7D8-3E96-4AE9-AA63-85F3C6690DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4935D7D8-3E96-4AE9-AA63-85F3C6690DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A26BBF4-6941-44D9-B097-870BD568D59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A26BBF4-6941-44D9-B097-870BD568D59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A26BBF4-6941-44D9-B097-870BD568D59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A26BBF4-6941-44D9-B097-870BD568D59A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EF7BFF6-0383-4425-917A-51EC94089A7E}
+	EndGlobalSection
+EndGlobal

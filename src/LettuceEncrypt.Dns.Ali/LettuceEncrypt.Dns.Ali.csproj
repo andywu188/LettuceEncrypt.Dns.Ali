@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Description>基于LettuceEncrypt，使用阿里云域名DNS验证，为 ASP.NET Core Web 应用程序，自动生成HTTPS通配符域名证书，并且在到期前，自动续签。</Description>
+    <PackageDescription>
+      $(Description)
+    </PackageDescription>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LettuceEncrypt" Version="1.3.0" />
+  </ItemGroup>
+
+</Project>

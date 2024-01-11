@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <PackageReleaseNotes Condition="$(VersionPrefix.StartsWith('1.0.'))">
+首次发布！使用阿里云域名DNS验证，生成SSL泛域名解析证书
+    </PackageReleaseNotes>
+
+    <PackageReleaseNotes>$(PackageReleaseNotes.Trim())</PackageReleaseNotes>
+  </PropertyGroup>
+</Project>
