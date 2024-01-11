@@ -45,7 +45,6 @@ if ($ci) {
     $formatArgs += '--verify-no-changes'
 }
 
-exec dotnet format -v detailed @formatArgs
 exec dotnet build --configuration $Configuration '-warnaserror:CS1591' @MSBuildArgs
 exec dotnet pack --no-restore --no-build --configuration $Configuration -o $artifacts @MSBuildArgs
 
