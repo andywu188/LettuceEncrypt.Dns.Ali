@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 namespace LettuceEncrypt.Dns.Ali.Api;
 
+/// <summary>
+/// 阿里云凭证
+/// </summary>
 public interface AlibabaCloudCredentials
 {
     /// <summary>

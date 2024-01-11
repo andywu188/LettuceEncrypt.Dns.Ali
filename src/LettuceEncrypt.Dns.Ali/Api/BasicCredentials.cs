@@ -1,4 +1,8 @@
 ﻿namespace LettuceEncrypt.Dns.Ali.Api;
+
+/// <summary>
+/// 基本凭证
+/// </summary>
 public class BasicCredentials : AlibabaCloudCredentials
 {
     private readonly string _accessKeyId;
