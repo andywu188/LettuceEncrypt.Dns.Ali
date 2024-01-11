@@ -1,5 +1,5 @@
 <h1>
-<img src="./logo.png" width="42" height="42"/>
+<img src="./logo.png" width="84" height="84"/>
 LettuceEncrypt.Dns.Ali
 </h1>
 
