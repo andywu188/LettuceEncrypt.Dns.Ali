@@ -69,8 +69,16 @@ public class DefaultAcsClient : IDisposable
         query = $"?Signature={signature}&{query}";
         var resp = await _client.GetAsync(query);
         var json = await resp.Content.ReadAsStringAsync();
-        return Newtonsoft.Json.JsonConvert.DeserializeObject<TResult>(json);
-
+        if (string.IsNullOrEmpty(json))
+        {
+            throw new Exception("阿里云接口返回空");
+        }
+        else
+        {
+#pragma warning disable CS8603
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<TResult>(json);
+#pragma warning restore CS8603
+        }
     }
 
     /// <summary>

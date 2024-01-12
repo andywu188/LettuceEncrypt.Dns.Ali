@@ -7,7 +7,13 @@ namespace LettuceEncrypt.Dns.Ali;
 /// </summary>
 internal class OptionsValidation : IValidateOptions<AliDnsOptions>
 {
-    public ValidateOptionsResult Validate(string name, AliDnsOptions options)
+    /// <summary>
+    /// 验证配置
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="options"></param>
+    /// <returns></returns>
+    public ValidateOptionsResult Validate(string? name, AliDnsOptions options)
     {
         if (string.IsNullOrEmpty(options.AccessKeyId))
         {
