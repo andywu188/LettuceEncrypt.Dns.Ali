@@ -18,12 +18,7 @@ internal class OptionsValidation : IValidateOptions<AliDnsOptions>
         {
             return ValidateOptionsResult.Fail("AliDNS AccessKeySecret is required.");
         }
-
-        if (string.IsNullOrEmpty(options.RegionId))
-        {
-            return ValidateOptionsResult.Fail("AliDNS RegionId is required.");
-        }
-
+        
         if (string.IsNullOrEmpty(options.DomainName))
         {
             return ValidateOptionsResult.Fail("AliDNS DomainName is required.");

@@ -14,19 +14,19 @@ public class AddDomainRecordRequest : IAliDnsApiParam
     /// <summary>
     /// 域名名称
     /// </summary>
-    public string DomainName { get; set; }
+    public string DomainName { get; set; } = default!;
     /// <summary>
     /// 主机记录，如果要解析@.exmaple.com，主机记录要填写"@”，而不是空
     /// </summary>
-    public string RR { get; set; }
+    public string RR { get; set; } = default!;
     /// <summary>
     /// 记录类型
     /// </summary>
-    public string Type { get; set; }
+    public string Type { get; set; } = default!;
     /// <summary>
     /// 记录值
     /// </summary>
-    public string Value { get; set; }
+    public string Value { get; set; } = default!;
     /// <summary>
     /// 生存时间，默认为600秒（10分钟）
     /// </summary>
@@ -38,6 +38,6 @@ public class AddDomainRecordRequest : IAliDnsApiParam
     /// <summary>
     /// 解析线路，默认为default
     /// </summary>
-    public string Line { get; set; }
+    public string Line { get; set; } = "default";
 
 }

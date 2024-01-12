@@ -9,6 +9,6 @@ public class DescribeDomainRecordsResponse: AliDnsApiPageResult
     /// <summary>
     /// 解析记录列表
     /// </summary>
-    public DomainRecords DomainRecords { get; set; }
+    public DomainRecords DomainRecords { get; set; } = default!;
 
 }

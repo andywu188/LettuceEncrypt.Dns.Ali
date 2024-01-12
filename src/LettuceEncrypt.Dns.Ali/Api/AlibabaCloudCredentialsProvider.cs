@@ -5,5 +5,9 @@
 /// </summary>
 public interface AlibabaCloudCredentialsProvider
 {
+    /// <summary>
+    /// 获取凭证
+    /// </summary>
+    /// <returns></returns>
     AlibabaCloudCredentials GetCredentials();
 }

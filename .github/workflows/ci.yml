@@ -8,16 +8,19 @@ on:
   workflow_dispatch:
     inputs:
       is_stable_build:
-        description: Use a version number indicating this is a stable release
+        description: 使用版本号表明这是否一个稳定版本，非稳定版时，版本号中会包含beta字样
         required: true
         default: "false"
       release:
-        description: Create a release
+        description: 是否创建发行包
         required: true
         default: "false"
     branches:
       - main
       - release/*
+
+permissions:
+  packages: read|write|none
 
 env:
   IS_STABLE_BUILD: ${{ github.event.inputs.is_stable_build }}

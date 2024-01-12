@@ -26,7 +26,7 @@ public class DefaultAcsClient : IDisposable
     /// </summary>
     public string AccessKey { get; set; }
 
-    private HttpClient? _client;
+    private HttpClient _client;
 
     /// <summary>
     /// 解析管理接口
@@ -69,8 +69,7 @@ public class DefaultAcsClient : IDisposable
         query = $"?Signature={signature}&{query}";
         var resp = await _client.GetAsync(query);
         var json = await resp.Content.ReadAsStringAsync();
-        var r = Newtonsoft.Json.JsonConvert.DeserializeObject<TResult>(json);
-        return r;
+        return Newtonsoft.Json.JsonConvert.DeserializeObject<TResult>(json);
 
     }
 
@@ -166,8 +165,7 @@ public class DefaultAcsClient : IDisposable
     /// </summary>
     public void Dispose()
     {
-        _client?.Dispose();
-        _client = null;
+        _client.Dispose();
     }
 }
 

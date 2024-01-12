@@ -14,7 +14,7 @@ public class DescribeDomainRecordsRequest : IAliDnsApiParam
     /// <summary>
     /// 域名名称
     /// </summary>
-    public string DomainName { get; set; }
+    public string DomainName { get; set; } = default!;
     /// <summary>
     /// 当前页数，起始值为1，默认为1
     /// </summary>
@@ -26,14 +26,14 @@ public class DescribeDomainRecordsRequest : IAliDnsApiParam
     /// <summary>
     /// 主机记录的关键字，按照“%RRKeyWord%”模式搜索，不区分大小写
     /// </summary>
-    public string RRKeyWord { get; set; }
+    public string? RRKeyWord { get; set; }
     /// <summary>
     /// 解析类型的关键字，按照全匹配搜索，不区分大小写
     /// </summary>
-    public string TypeKeyWord { get; set; }
+    public string? TypeKeyWord { get; set; }
     /// <summary>
     /// 记录值的关键字，按照“%ValueKeyWord%”模式搜索，不区分大小写
     /// </summary>
-    public string ValueKeyWord { get; set; }
+    public string? ValueKeyWord { get; set; }
 
 }

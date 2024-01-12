@@ -9,17 +9,15 @@ public class AliDnsOptions
     /// <summary>
     /// 访问ID
     /// </summary>
-    public string? AccessKeyId { get; set; }
+    public string AccessKeyId { get; set; } = default!;
+
     /// <summary>
     /// 密钥
     /// </summary>
-    public string? AccessKeySecret { get; set; }
-    /// <summary>
-    /// 区域
-    /// </summary>
-    public string? RegionId { get; set; }
+    public string AccessKeySecret { get; set; } = default!;
+
     /// <summary>
     /// 域名
     /// </summary>
-    public string? DomainName { get; set; }
+    public string DomainName { get; set; } = default!;
 }

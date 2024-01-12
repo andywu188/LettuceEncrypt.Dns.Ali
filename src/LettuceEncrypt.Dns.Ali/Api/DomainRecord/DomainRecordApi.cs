@@ -5,14 +5,14 @@
 /// </summary>
 public class DomainRecordApi
 {
-    public DefaultAcsClient api { get; private set; }
+    private DefaultAcsClient _api { get; set; }
     /// <summary>
     /// Initializes a new instance of the <see cref="DomainRecordApi"/> class.
     /// </summary>
     /// <param name="api">The API.</param>
     public DomainRecordApi(DefaultAcsClient api)
     {
-        this.api = api;
+        this._api = api;
     }
 
     /// <summary>
@@ -22,7 +22,7 @@ public class DomainRecordApi
     /// <returns></returns>
     public async Task<DescribeDomainRecordsResponse> DescribeDomainRecords(DescribeDomainRecordsRequest param)
     {
-        return await api.GetAsync<DescribeDomainRecordsRequest, DescribeDomainRecordsResponse>(param);
+        return await _api.GetAsync<DescribeDomainRecordsRequest, DescribeDomainRecordsResponse>(param);
     }
         
     /// <summary>
@@ -32,7 +32,7 @@ public class DomainRecordApi
     /// <returns></returns>
     public async Task<DefaultDomainRecordResult> AddDomainRecord(AddDomainRecordRequest param)
     {
-        return await api.GetAsync<AddDomainRecordRequest, DefaultDomainRecordResult>(param);
+        return await _api.GetAsync<AddDomainRecordRequest, DefaultDomainRecordResult>(param);
     }
 
     /// <summary>
@@ -42,7 +42,7 @@ public class DomainRecordApi
     /// <returns></returns>
     public async Task<DefaultDomainRecordResult> DeleteDomainRecord(DeleteDomainRecordRequest param)
     {
-        return await api.GetAsync<DeleteDomainRecordRequest, DefaultDomainRecordResult>(param);
+        return await _api.GetAsync<DeleteDomainRecordRequest, DefaultDomainRecordResult>(param);
     }
 
     /// <summary>
@@ -52,7 +52,7 @@ public class DomainRecordApi
     /// <returns></returns>
     public async Task<DefaultDomainRecordResult> UpdateDomainRecord(UpdateDomainRecordRequest param)
     {
-        return await api.GetAsync<UpdateDomainRecordRequest, DefaultDomainRecordResult>(param);
+        return await _api.GetAsync<UpdateDomainRecordRequest, DefaultDomainRecordResult>(param);
     }
 
     /// <summary>
@@ -62,6 +62,6 @@ public class DomainRecordApi
     /// <returns></returns>
     public async Task<DescribeDomainRecordInfoResult> DescribeDomainRecordInfo(DescribeDomainRecordInfoRequest param)
     {
-        return await api.GetAsync<DescribeDomainRecordInfoRequest, DescribeDomainRecordInfoResult>(param);
+        return await _api.GetAsync<DescribeDomainRecordInfoRequest, DescribeDomainRecordInfoResult>(param);
     }
 }

@@ -9,6 +9,6 @@ public class DefaultDomainRecordResult : AliDnsApiBaseResult
     /// <summary>
     /// 解析记录的ID
     /// </summary>
-    public string RecordId { get; set; }
+    public string RecordId { get; set; } = default!;
         
 }

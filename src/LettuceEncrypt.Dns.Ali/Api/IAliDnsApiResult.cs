@@ -19,7 +19,7 @@ public class AliDnsApiBaseResult : IAliDnsApiResult
     /// <summary>
     /// 唯一识别码
     /// </summary>
-    public string RequestId { get; set; }
+    public string RequestId { get; set; } = default!;
 }
 
 /// <summary>
