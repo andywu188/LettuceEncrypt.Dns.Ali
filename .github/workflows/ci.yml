@@ -20,7 +20,11 @@ on:
       - release/*
 
 permissions:
+  contents: write
   packages: write
+  pages: write
+  repository-projects: write
+  statuses: write
 
 env:
   IS_STABLE_BUILD: ${{ github.event.inputs.is_stable_build }}
